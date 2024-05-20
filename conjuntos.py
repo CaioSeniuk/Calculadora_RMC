@@ -40,12 +40,13 @@ def main_conjuntos():
     conjuntoB = []
 
     os.system("cls")
+    print("-"*30, " Calculadora RMC ", "-"*30, "\nEscolheu Conjuntos")
     tamConjuntoA = int(input("\nDigite a quantidade de números do conjunto A: "))
     contador_A = 0
     while contador_A != tamConjuntoA:
         num = int(input(f"Insira o {contador_A +1}° número: "))
         if num in conjuntoA:
-            print("\nErro! Este número já foi digitado\n")
+            print("\nEste número já foi inserido\n")
             continue
         conjuntoA.append(num)
         contador_A +=1
