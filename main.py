@@ -9,7 +9,6 @@ def menu():
 
 os.system("cls")
 print("-"*30, " Calculadora RMC ", "-"*30)
-
 while True:
     escolha = menu()
     if escolha == 2:

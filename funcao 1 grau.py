@@ -10,6 +10,7 @@ x1 = int(input("\nInsira o primeiro parametro de X: "))
 x2 = int(input("\nInsira o segundo parametro de X: "))
 eixoX = [x1,x2]
 c = 1
+
         
 #eixoX =  np.arange(-10,10,1) #do -1o até 10 em parametro de 1 em 1
 eixoY = []
