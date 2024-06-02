@@ -40,34 +40,44 @@ def main_conjuntos():
     conjuntoB = []
 
     os.system("cls")
-    print("-"*30, " Calculadora RMC ", "-"*30, "\nEscolheu Conjuntos")
-    tamConjuntoA = int(input("\nDigite a quantidade de números do conjunto A: "))
-    contador_A = 0
-    while contador_A != tamConjuntoA:
-        num = int(input(f"Insira o {contador_A +1}° número: "))
-        if num in conjuntoA:
-            print("\nEste número já foi inserido\n")
+    print("-"*30, " Calculadora RMC ", "-"*30, "\nEscolheu Conjuntos - Digite -1 para sair")
+    while True:
+        tamConjuntoA = int(input("\nDigite a quantidade de números do conjunto A: "))
+        if tamConjuntoA == -1:
+            break
+        elif tamConjuntoA < -1:
+            print("Opção inválida...")
             continue
-        conjuntoA.append(num)
-        contador_A +=1
+        else:
+            contador_A = 0
+            while contador_A != tamConjuntoA:
+                num = int(input(f"Insira o {contador_A +1}° número: "))
+                if num in conjuntoA:
+                    print("\nEste número já foi inserido\n")
+                    continue
+                conjuntoA.append(num)
+                contador_A +=1
 
-    os.system("cls")
-    tamConjuntoB = int(input("\nDigite a quantidade de números do conjunto B: "))
-    contador_B = 0
-    while contador_B != tamConjuntoB:
-        num = int(input(f"Insira o {contador_B +1}° número: "))
-        if num in conjuntoB:
-            print("\nErro! Este número já foi digitado\n")
-            continue
-        conjuntoB.append(num)
-        contador_B +=1
+            os.system("cls")
 
-    os.system("cls")
-    print(f"\nConjunto A: {sorted(conjuntoA)}\nConjunto B: {sorted(conjuntoB)}\n")
-    verificar_conjuntos(conjuntoA,conjuntoB)
-    uniao_conjuntos(conjuntoA,conjuntoB)
-    intersecao(conjuntoA,conjuntoB)
-    diferenca(conjuntoA,conjuntoB)
+            #Armazernar os números no conjunto B
+            tamConjuntoB = int(input("\nDigite a quantidade de números do conjunto B: "))
+            contador_B = 0
+            while contador_B != tamConjuntoB:
+                num = int(input(f"Insira o {contador_B +1}° número: "))
+                if num in conjuntoB:
+                    print("\nErro! Este número já foi digitado\n")
+                    continue
+                conjuntoB.append(num)
+                contador_B +=1
+
+            os.system("cls")
+            print(f"\nConjunto A: {sorted(conjuntoA)}\nConjunto B: {sorted(conjuntoB)}\n")
+            verificar_conjuntos(conjuntoA,conjuntoB)
+            uniao_conjuntos(conjuntoA,conjuntoB)
+            intersecao(conjuntoA,conjuntoB)
+            diferenca(conjuntoA,conjuntoB)
+            break
 
 
 
