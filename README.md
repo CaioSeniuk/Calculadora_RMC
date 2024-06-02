@@ -1,9 +1,9 @@
+# O que preciso para este programa rodar em minha máquina?
+Para este programa funcionar você deverá baixar em sua máquina as bibliotecas: Matplotlib e Numpy
+
 Este programa foi desenvolvido na versão Phyton 3.12.3 e utilizado Visual Studio Code
 
 Na instalação do Phyton marcar a opção "instalar pip"
-
-# O que preciso para este programa rodar em minha máquina?
-Para este programa funcionar você deverá baixar em sua máquina as bibliotecas: Matplotlib e Numpy
 
 Abra o terminal e execute as linhas de código abaixo
 
