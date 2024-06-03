@@ -37,7 +37,8 @@ while True:
         break
 
     #CONDIÇÃO PARA EVITAR ERRO
-    else: 
+    else:
         print("\nErro! Insira um valor válido...\n")
+        time.sleep(2)
         continue
 

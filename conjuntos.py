@@ -23,7 +23,7 @@ def intersecao(conjuntoA,conjuntoB):
     for i in conjuntoA:
         if i in conjuntoB:
             intersecao_A_B.append(i)
-    print(f"A intersecao entre A e B é igual a: {sorted(intersecao_A_B)}\n")
+    print(f"A interseção entre A e B é igual a: {sorted(intersecao_A_B)}\n")
 
 def diferenca(conjuntoA,conjuntoB):
     diferenca_A_B = []
