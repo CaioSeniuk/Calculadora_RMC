@@ -2,6 +2,7 @@ import os, sys, time
 from conjuntos import main_conjuntos
 from funcao_2_grau import funcao_2grau
 from funcao_exponencial import funcao_exp
+from matrizes import GerarMatrizes
 
 def menu():
     menu = int(input("\nEscolha uma opção da calculadora:\n1- Conjuntos\n2- Função 2º Grau\n3- Função exponencial\n4- Matrizes\n5- SAIR\n\n-> "))
@@ -29,7 +30,8 @@ while True:
 
     #MATRIZES
     elif escolha == 4:
-        print("\nEscolha 4")
+        GerarMatrizes()
+        continue
 
     #SAIR
     elif escolha == 5:
