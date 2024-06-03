@@ -15,6 +15,6 @@ Instalar matplotlib:
 
     pip instal matplotlib
 
-# Agora é só baixar o arquivo .zip, descompactar em uma pasta e abri-lo em seu editor de código
+# Agora é só baixar o arquivo .zip, descompactar em uma pasta, abri-lo em seu editor de código e executar o arquivo "main.py"
 
 
