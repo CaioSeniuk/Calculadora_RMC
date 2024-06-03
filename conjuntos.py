@@ -1,4 +1,4 @@
-import os
+import os, sys
 
 def verificar_conjuntos(conjuntoA,conjuntoB):
     verificador = 0
@@ -40,7 +40,7 @@ def main_conjuntos():
     conjuntoB = []
 
     os.system("cls")
-    print("-"*30, " Calculadora RMC ", "-"*30, "\nEscolheu Conjuntos - Digite -1 para sair")
+    print("-"*30, " Calculadora RMC ", "-"*30, "\nEscolheu Conjuntos - Digite -1 para sair (somente no primeiro input)")
     while True:
         tamConjuntoA = int(input("\nDigite a quantidade de números do conjunto A: "))
         if tamConjuntoA == -1:
@@ -77,7 +77,13 @@ def main_conjuntos():
             uniao_conjuntos(conjuntoA,conjuntoB)
             intersecao(conjuntoA,conjuntoB)
             diferenca(conjuntoA,conjuntoB)
-            break
+            
+            sair = int(input("\nAperte -1 para sair da Calculadora\nAperter 0 para voltar ao Menu Principal\n\n--> "))
+
+            if sair == -1:
+                sys.exit()
+            elif sair == 0:
+                break
 
 
 
